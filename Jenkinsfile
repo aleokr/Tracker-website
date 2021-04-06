@@ -21,6 +21,7 @@ pipeline {
                 sh "npm config set always-auth true"
                 sh "npm config set strict-ssl true"
                 sh "npm config ls"
+                sh 'rm -rf node_modules'
                 sh 'npm install' 
             }
         }
